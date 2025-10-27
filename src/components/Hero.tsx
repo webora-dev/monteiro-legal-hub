@@ -1,14 +1,9 @@
 import { Button } from "@/components/ui/button";
-import { MessageCircle } from "lucide-react";
 import heroImage from "@/assets/hero-law-office.jpg";
 
-interface HeroProps {
-  onOpenAppointment: () => void;
-}
-
-export const Hero = ({ onOpenAppointment }: HeroProps) => {
+export const Hero = () => {
   const whatsappNumber = "5551998887766";
-  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent("Olá! Gostaria de agendar uma consulta jurídica.")}`;
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent("Olá, gostaria de agendar uma consulta com o Dr. Rafael Monteiro.")}`;
 
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
@@ -54,25 +49,16 @@ export const Hero = ({ onOpenAppointment }: HeroProps) => {
             <span>LGPD</span>
           </div>
 
-          {/* CTAs */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6">
+          {/* CTA */}
+          <div className="flex items-center justify-center pt-6">
             <Button 
               variant="hero" 
-              size="xl"
-              onClick={onOpenAppointment}
-              className="w-full sm:w-auto"
-            >
-              Agende uma consulta gratuita
-            </Button>
-            <Button 
-              variant="outline" 
               size="xl"
               asChild
               className="w-full sm:w-auto"
             >
               <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-                <MessageCircle className="mr-2" />
-                Fale pelo WhatsApp
+                Agendar consulta
               </a>
             </Button>
           </div>
