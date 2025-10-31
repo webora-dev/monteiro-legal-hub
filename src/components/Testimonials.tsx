@@ -63,8 +63,9 @@ export const Testimonials = () => {
                     <div className="flex items-center gap-3 pt-4 border-t border-border">
                       <img 
                         src={testimonial.photo} 
-                        alt={`Foto de ${testimonial.name}`}
+                        alt={`${testimonial.name} — ${testimonial.role} — cliente satisfeito Monteiro Advocacia`}
                         className="w-12 h-12 rounded-full object-cover"
+                        loading="lazy"
                       />
                       <div>
                         <div className="font-semibold text-foreground">{testimonial.name}</div>

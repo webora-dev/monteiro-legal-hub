@@ -6,14 +6,17 @@ export const Hero = () => {
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent("Olá, gostaria de agendar uma consulta com o Dr. Rafael Monteiro.")}`;
 
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[90vh] sm:min-h-[80vh] flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 z-0"
+        role="img"
+        aria-label="Escritório de advocacia moderno e profissional"
         style={{
           backgroundImage: `linear-gradient(rgba(11, 11, 11, 0.85), rgba(11, 11, 11, 0.75)), url(${heroImage})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
         }}
       />
       
@@ -23,21 +26,21 @@ export const Hero = () => {
         backgroundSize: '40px 40px'
       }} />
 
-      <div className="container mx-auto max-w-7xl px-4 py-20 relative z-10">
-        <div className="max-w-4xl mx-auto text-center space-y-8">
+      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-20 relative z-10">
+        <div className="max-w-4xl mx-auto text-center space-y-6 sm:space-y-8">
           {/* Main Heading */}
-          <h1 className="text-5xl md:text-7xl font-bold text-foreground leading-tight">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight px-2">
             Dr. Rafael Monteiro
             <span className="block text-accent mt-2">Monteiro Advocacia</span>
           </h1>
 
           {/* Subtitle */}
-          <p className="text-2xl md:text-3xl text-muted-foreground font-light">
+          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-muted-foreground font-light px-4">
             Defesa estratégica com ética e resultado
           </p>
 
           {/* Practice Areas Bullet */}
-          <div className="flex items-center justify-center gap-3 text-accent text-sm md:text-base font-medium tracking-wider">
+          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-accent text-xs sm:text-sm md:text-base font-medium tracking-wider px-4">
             <span>Cível</span>
             <span className="text-muted">•</span>
             <span>Trabalhista</span>

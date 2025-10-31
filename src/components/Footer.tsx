@@ -8,7 +8,12 @@ export const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Logo & Description */}
           <div className="space-y-4">
-            <img src={logoImage} alt="Monteiro Advocacia logo" className="h-16 w-auto" />
+            <img 
+              src={logoImage} 
+              alt="Monteiro Advocacia — Dr. Rafael Monteiro — Escritório de advocacia em Porto Alegre especializado em Direito Cível, Trabalhista, Família, Tributário e LGPD" 
+              className="h-16 w-auto"
+              loading="lazy"
+            />
             <p className="text-sm text-muted-foreground">
               Defesa estratégica com ética e resultado desde 2006.
             </p>

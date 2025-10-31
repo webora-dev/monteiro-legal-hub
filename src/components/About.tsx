@@ -19,8 +19,9 @@ export const About = () => {
             <div className="aspect-square rounded-lg overflow-hidden border-4 border-accent/20 shadow-2xl">
               <img 
                 src={lawyerPhoto} 
-                alt="Dr. Rafael Monteiro — retrato profissional"
+                alt="Dr. Rafael Monteiro — advogado com 14 anos de experiência em Direito Cível, Trabalhista, Família, Tributário e LGPD"
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
             </div>
             <div className="absolute -bottom-6 -right-6 bg-accent text-primary-foreground p-6 rounded-lg shadow-xl">

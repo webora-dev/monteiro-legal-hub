@@ -7,6 +7,7 @@ const posts = [
     title: "LGPD: Como adequar sua empresa em 2025",
     excerpt: "Entenda as principais mudanças na legislação de proteção de dados e como garantir compliance total.",
     coverUrl: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=400&fit=crop",
+    alt: "Profissional de direito analisando documentos sobre proteção de dados e LGPD",
     date: "15 Jan 2025",
     readTime: "5 min",
   },
@@ -14,6 +15,7 @@ const posts = [
     title: "Direito Trabalhista: Reforma e seus impactos",
     excerpt: "Análise completa das mudanças na CLT e como elas afetam empregadores e empregados.",
     coverUrl: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&h=400&fit=crop",
+    alt: "Ambiente corporativo mostrando relação entre empregador e empregado no contexto trabalhista",
     date: "10 Jan 2025",
     readTime: "7 min",
   },
@@ -21,6 +23,7 @@ const posts = [
     title: "Planejamento Tributário Estratégico",
     excerpt: "Estratégias legais para reduzir carga tributária e aumentar a competitividade empresarial.",
     coverUrl: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&h=400&fit=crop",
+    alt: "Análise financeira e tributária com documentos e calculadora para planejamento fiscal",
     date: "05 Jan 2025",
     readTime: "6 min",
   },
@@ -49,8 +52,9 @@ export const Blog = () => {
               <div className="aspect-video overflow-hidden">
                 <img 
                   src={post.coverUrl} 
-                  alt={post.title}
+                  alt={post.alt}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  loading="lazy"
                 />
               </div>
               <CardContent className="p-6 space-y-3">
